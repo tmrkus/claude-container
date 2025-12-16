@@ -11,4 +11,4 @@ git fetch upstream --prune --no-tags && git merge upstream/main && git push orig
 docker build --platform linux/arm64/v8 -t claude-container-arm64 claude-code/
 
 # Make script executable and create a symlink
-chmod +x bin/claude-container && ln -sf "$(realpath bin/claude-container)" ~/.local/bin/claude-container
+chmod +x bin/claude-container && ln -sf "$(realpath bin/claude-container)" ~/.local/bin/claude
