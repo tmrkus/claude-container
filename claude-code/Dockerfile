@@ -16,6 +16,9 @@ RUN curl -s "https://get.sdkman.io?ci=true" | bash && \
 # Install Claude Code globally
 RUN npm install -g @anthropic-ai/claude-code@~2.1.0
 
+# Install Gemini CLI globally
+RUN npm install -g @google/gemini-cli
+
 # Create directories
 RUN mkdir -p /claude /workspace
 
